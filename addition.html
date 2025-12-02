@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        dis=()=>{
+            var n1=document.getElementById("t1").value;
+            var n2=document.getElementById("t2").value;
+            // var sum=parseInt(n1)<parseInt(n2);
+            // document.getElementById("res").innerHTML="("+n1+"<"+n2+")="+sum;
+            var sum=parseInt(n1)**parseInt(n2);
+            document.getElementById("res").innerHTML=+n1+<sup>+n2+</sup>+"="+sum;
+            // escap down button is used for direct control of the print a+b=sum in output
+        }
+        show=()=>
+        {
+            document.getElementById("res").innerHTML="Typing....";
+        }
+        show1=()=>
+        {
+            document.getElementById("res").innerHTML="";
+        }
+        
+
+    </script>
+</head>
+<body>
+    <input type="text" onkeydown="show()" onkeyup="show1()" id="t1" placeholder="Enter num.1"><br>
+    <input type="text" id="t2" placeholder="Enter num.2"><br>
+    <!-- <button onclick="dis()">Find Total</button> -->
+    <input type="button" onclick="dis()" value="Total">
+    <div id="res"></div>
+</body>
+</html>

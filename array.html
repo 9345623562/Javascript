@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            var arr=[100,200,300,400,500];
+            var len=arr.length;
+            var max=0;
+            for(var i=1;i<len;i++)
+            {
+               if(arr[i]>max)
+               {
+                  max=arr[i];
+               }
+            }
+            document.getElementById("res").innerHTML+="Gretest Number:"+max;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show()">clickme</button>
+    <div id="res"></div>
+</body>
+</html>

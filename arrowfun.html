@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        test1=()=>{
+            console.log("curser inside");
+            document.getElementById("t1").style.backgroundColor="yellow";
+        }
+        test2=()=>{
+            console.log("curser outside");
+            document.getElementById("t1").style.backgroundColor="pink";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show()">clickme</button>
+    <button onclick="disp()">clickme</button>
+    <button onclick="dis1()">double click</button>
+    <button onclick="myadd(20,25)">Find Total</button>
+    <input type="button" onclick="myadd(20,27)" value="Total">
+    <br>
+    <input type="text" id="t1" onfocus="test1()" onblur="test2()">
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            var s=document.getElementById("t1").value;
+            var i=parseInt(document.getElementById("t2").value);
+            var ans=s.charAt(i);
+            document.getElementById("res").innerHTML=`Output:${ans}`;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter text:"><br>
+    <input type="text" id="t2" placeholder="Enter index:"><br>
+    <input type="button" onclick="show()" value="result"><br>
+    <div id="res"></div>
+    
+</body>
+</html>
